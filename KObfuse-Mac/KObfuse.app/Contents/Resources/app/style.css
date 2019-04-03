@@ -1,0 +1,71 @@
+@import url("noto-sans.css");
+
+body {
+  background-color: #333;
+  padding: 24px;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+span#title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+div.modeCon {
+  margin-top: 8px;
+  padding: 6px;
+}
+
+div.dirSelectCon {
+  padding: 6px;
+}
+div.dirSelectCon.from {
+  margin-top: 12px;
+}
+div.dirSelectCon.to {
+  margin-bottom: 12px;
+}
+
+div.dirSelect {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+div.dirSelect:hover {
+  background-color: #eee;
+}
+
+div.submitBtn {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 0 4px 0 6px;
+  cursor: pointer;
+}
+
+div.resultCon {
+  height: 380px;
+  margin-top: 24px;
+  background-color: #111;
+  overflow-y: scroll;
+}
+div.resultCon > div {
+  padding: 4px;
+  font-size: 0.9em;
+}
+div.resultCon > div.lime {
+  color: lime;
+}
+div.resultCon > div.salmon {
+  color: salmon;
+}
+div.resultCon > div:nth-child(even) {
+  background-color: black;
+}

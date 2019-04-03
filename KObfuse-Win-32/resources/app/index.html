@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>KObfuse :: KFace 폴더 난독 동기화</title>
+  </head>
+  <body>
+    <span id="title">
+      KObfuse :: KFace 폴더 난독 동기화
+    </span>
+    <div class="modeCon">
+      <input type="radio" name="mode" checked="checked"/> 모든 파일 처리
+      <br>
+      <input type="radio" id="onlyUpdated" name="mode"/> 업데이트된(출력 위치에 같은 이름의 더 새로운 파일이 없는) 파일만 처리
+    </div>
+    <div class="modeCon">
+      <input type="radio" id="onlyJs" name="filetype" checked="checked"/> .js 파일만 난독화해서 복사
+      <br>
+      <input type="radio" name="filetype"/> 모든 종류의 파일(.js 파일이 아니면 단순 복사)
+    </div>
+    <div class="dirSelectCon from">
+      <div class="dirSelect from">입력 폴더</div>
+      <span class="dirStr from">(선택되지 않음)</span>
+    </div>
+    <div class="dirSelectCon to">
+      <div class="dirSelect to">출력 폴더</div>
+      <span class="dirStr to">(선택되지 않음)</span>
+    </div>
+
+    <div class="submitCon">
+      <div class="submitBtn">
+        처리 시작
+      </div>
+      <span class="submitProgress"></span>
+    </div>
+
+    <div class="resultCon">
+
+    </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
